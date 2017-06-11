@@ -1,0 +1,6 @@
+.idea
+*.log
+npm-debug.log*
+client/node_modules
+client/semantic
+graphql.config.json

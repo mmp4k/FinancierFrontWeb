@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/semantic/dist/semantic.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="%PUBLIC_URL%/semantic/dist/semantic.js"></script>
+    <title>Wallets</title>
+</head>
+<div>
+    <div class="ui teal inverted fixed large menu">
+        <a class="active orange item" href="#wallets">
+            Wallets
+        </a>
+        <a class="item" href="#transactions">
+            Transactions
+        </a>
+        <a class="item" href="#notifications">
+            Notifications
+        </a>
+        <a class="item" href="#premium">
+            <i class="gamepad icon"></i>
+            Premium!
+        </a>
+        <div class="right menu">
+            <div class="item">
+                Hi m@pilsniak.com!
+            </div>
+            <a class="ui item">
+                Logout
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Page Contents -->
+
+    <div class="ui vertical stripe segment" style="padding-top:70px">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <h1><a name="wallets"></a>Marcin, your wallets.</h1>
+                <div class="ui middle aligned stackable grid container">
+                    <div id="wallets" class="row"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <h1><a name="transactions"></a>Marcin, your transactions.</h1>
+                <div class="ui middle aligned stackable grid container">
+                    <div id="transactions" class="row"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <h1><a name="notifications"></a>Marcin, your subscribed notifications.</h1>
+                <table class="ui table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th style="width: 10%;text-align:center">Options</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><strong>Daily</strong>: on email m@pilsniak.com</td>
+                        <td>
+                            <div class="ui   red labeled icon button" style="float:right">
+                                <i class="minus icon"></i> Remove
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>ETFSP500 less than</strong>: 90 PLN</td>
+                        <td>
+                            <div class="ui   red labeled icon button" style="float:right">
+                                <i class="minus icon"></i> Remove
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>ETFSP500 less than</strong>: ten months average</td>
+                        <td>
+                            <div class="ui   red labeled icon button" style="float:right">
+                                <i class="minus icon"></i> Remove
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <h1><a name="premium"></a>Marcin, get premium.</h1>
+                <div class="ui cards two">
+                    <div class="ui card">
+                        <div class="content">
+                            <div class="header center aligned">Free</div>
+                            <div class="meta center aligned">free and unlimited</div>
+                            <div class="ui divider horizontal">$0 / month</div>
+                            <div class="ui list">
+                                <div class="item"><i class="icon checkmark"></i>
+                                    <div class="content">
+                                        Do things
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark"></i>
+                                    <div class="content">
+                                        <b>25.000</b> of stuff
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark"></i>
+                                    <div class="content">
+                                        <b>30</b> days of history
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark"></i>
+                                    <div class="content">
+                                        <b>20</b> is just a number
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark"></i>
+                                    <div class="content">
+                                        <b>15</b> is another number
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon minus"></i>
+                                    <div class="content">
+                                        <b>Default</b> Server
+                                        <br>
+                                        <small>(50 Petaflops/s)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button fluid grey disabled">Default</button>
+                        </div>
+                    </div>
+                    <div class="ui card raised">
+                        <div class="content">
+                            <a class="ui label left corner blue">
+                                <i class="icon plus"></i>
+                            </a>
+                            <div class="header center aligned">Premium</div>
+                            <div class="meta center aligned">prio ressources</div>
+                            <div class="ui divider horizontal">$2 / month</div>
+                            <div class="ui list">
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        Do <b>all</b> things
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>60.000</b> of stuff
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>120</b> days of history
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>100</b> is just a number
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>60</b> is another number
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>Awesome</b> Server
+                                        <br>
+                                        <small>(50 Petaflops/s)</small>
+                                    </div>
+                                </div>
+                                <div class="item"><i class="icon checkmark blue"></i>
+                                    <div class="content">
+                                        <b>Support</b> the development
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <button class="ui button fluid blue">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment"
+         style="min-height:200px;padding: 5em 0em;width: 100%;margin-top:3em">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Sitemap</a>
+                        <a href="#" class="item">Contact Us</a>
+                        <a href="#" class="item">Religious Ceremonies</a>
+                        <a href="#" class="item">Gazebo Plans</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Services</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Banana Pre-Order</a>
+                        <a href="#" class="item">DNA FAQ</a>
+                        <a href="#" class="item">How To Access</a>
+                        <a href="#" class="item">Favorite X-Men</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="root"></div>
+</body>
+</html>
